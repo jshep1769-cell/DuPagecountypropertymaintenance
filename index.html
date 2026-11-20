@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#285d3e">
+  <meta name="description" content="An independent information and service-inquiry resource for snow removal, landscaping and seasonal property care in DuPage County, Illinois.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://dupagecountypropertymaintenance.com/">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <title>Snow Removal in DuPage County, IL | DuPage Property Care Guide</title>
+  <style>
+    :root {--forest:#244d33;--forest-dark:#163726;--green:#34764b;--leaf:#78a348;--cream:#f7f7f1;--text:#26332a;--muted:#66716a;--edge:#e1e7df;--white:#fff;--max:1150px;}
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:90px}
+    body{margin:0;color:var(--text);background:#fff;font-family:"Fira Sans","Open Sans",Arial,Helvetica,sans-serif;font-size:16px;line-height:1.63}
+    img,svg{max-width:100%;height:auto}
+    a{color:inherit} a:focus-visible,button:focus-visible{outline:3px solid #ca9b27;outline-offset:3px}
+    .container{width:min(var(--max),calc(100% - 44px));margin-inline:auto}
+    .callbar{position:sticky;z-index:200;top:0;background:var(--forest-dark);color:#fff;box-shadow:0 3px 12px #102a1a24}
+    .callbar-inner{display:flex;justify-content:center;align-items:center;gap:20px;padding:11px 18px;min-height:72px;text-align:center}
+    .callbar-message{font-size:15px;font-weight:700;line-height:1.35}
+    .callbar a{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#fff;color:var(--forest-dark);border-radius:4px;padding:10px 18px;font-weight:800;text-decoration:none;white-space:nowrap;font-size:18px;transition:background .18s}
+    .callbar a:hover{background:#e9f4e6}
+    .siteheader{background:#fff;border-bottom:1px solid var(--edge)}
+    .siteheader-inner{min-height:92px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0;color:var(--forest-dark)}
+    .brand-mark{width:56px;height:56px;flex:none}
+    .brand-title{font-size:18px;font-weight:900;line-height:1.15;letter-spacing:-.5px}
+    .brand-subtitle{font-size:11px;line-height:1.3;color:#65746b;letter-spacing:.065em;text-transform:uppercase;font-weight:700;margin-top:4px}
+    .nav{display:flex;align-items:center;flex-wrap:wrap;gap:27px}
+    .nav a{text-decoration:none;color:#26352b;font-size:14px;font-weight:700;letter-spacing:.015em}
+    .nav a:hover{color:var(--green)}
+    .hero{background:linear-gradient(100deg,rgba(12,38,25,.91),rgba(28,65,43,.80) 56%,rgba(34,77,51,.64)),url('assets/winter-landscape.svg') center/cover no-repeat;color:#fff;position:relative;overflow:hidden}
+    .hero-inner{min-height:545px;display:flex;align-items:center;padding-block:75px 84px}
+    .hero-copy{max-width:740px}
+    .eyebrow{text-transform:uppercase;letter-spacing:.17em;font-size:13px;font-weight:900;color:#acd28e;margin:0 0 12px}
+    h1,h2,h3,p{margin-top:0}
+    h1,h2,h3{line-height:1.16;letter-spacing:-.025em}
+    h1{font-size:clamp(40px,5.3vw,66px);max-width:720px;margin-bottom:22px}
+    .hero p.lead{font-size:clamp(17px,2vw,21px);max-width:660px;color:#f1f7f0;line-height:1.6;margin-bottom:26px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;text-align:center;gap:9px;text-decoration:none;background:var(--green);color:#fff;min-height:48px;padding:12px 21px;border-radius:3px;font-weight:800;border:2px solid transparent;transition:.18s ease}
+    .btn:hover{background:var(--forest-dark)}
+    .btn-light{background:#fff;color:var(--forest-dark)}.btn-light:hover{background:#eaf2e7}
+    .btn-outline{background:transparent;border-color:var(--forest);color:var(--forest)}.btn-outline:hover{color:#fff}
+    .hero-foot{font-size:12px;margin-top:19px;color:#e2e8df;letter-spacing:.01em}
+    .section{padding:82px 0}
+    .section-alt{background:var(--cream)}
+    .section-intro{max-width:760px;margin-bottom:37px}
+    .section-kicker{color:var(--green);text-transform:uppercase;letter-spacing:.13em;font-size:13px;font-weight:800;margin-bottom:10px}
+    h2{font-size:clamp(30px,3.7vw,46px);color:var(--forest-dark);margin-bottom:16px}
+    h3{font-size:23px;margin-bottom:13px;color:var(--forest-dark)}
+    .section-intro>p:last-child,.muted{color:#54615a}
+    .services3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+    .service-card{background:#fff;border:1px solid var(--edge);box-shadow:0 7px 22px #1d3e2910;overflow:hidden}
+    .service-art{height:185px;display:flex;align-items:center;justify-content:center;background:#dfece1;overflow:hidden}
+    .service-art img{width:100%;height:100%;object-fit:cover}
+    .service-content{padding:27px 26px 28px}
+    .service-content h3{font-size:24px}
+    .service-content p{color:#607168;margin-bottom:0}
+    .service-card.featured{border-bottom:4px solid var(--leaf)}
+    .two-col{display:grid;grid-template-columns:1.05fr .95fr;gap:58px;align-items:center}
+    .copy p{color:#4a5b50}
+    .check-list{list-style:none;padding:0;margin:24px 0 0}
+    .check-list li{margin-bottom:12px;padding-left:28px;position:relative;color:#455c4d}
+    .check-list li:before{content:"✓";color:var(--green);position:absolute;left:0;font-weight:900}
+    .image-panel{background:#e1ece4;min-height:320px;display:grid;place-items:center;border:1px solid #d4e0d3;overflow:hidden}
+    .image-panel img{height:100%;width:100%;object-fit:cover}
+    .banner-section{color:#fff;background:var(--forest-dark);padding:64px 0}
+    .banner-section h2{color:#fff;max-width:800px}
+    .banner-section p{max-width:780px;color:#deece0}
+    .banner-section .btn{margin-top:8px}
+    .accordion{max-width:860px}
+    .accordion details{border:1px solid var(--edge);border-bottom:0;background:#fff}
+    .accordion details:last-child{border-bottom:1px solid var(--edge)}
+    .accordion summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;font-weight:800;padding:20px 24px;color:var(--forest-dark)}
+    .accordion summary::-webkit-details-marker{display:none}
+    .accordion summary::after{content:"+";font-size:25px;font-weight:400;color:var(--green);margin-left:20px}
+    .accordion details[open] summary::after{content:"−"}
+    .accordion details p{padding:0 24px 19px;margin:0;color:#57635a}
+    .faq-caption{color:var(--muted);font-size:14px;max-width:860px;margin-top:20px}
+    .service-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+    .service-line{padding:24px;border-left:4px solid var(--green);background:#fff;box-shadow:0 3px 12px #1d3e2910}
+    .service-line h3{font-size:21px}.service-line p{color:#5b675e;margin:0}
+    .towns{margin:20px 0 0;padding:0;list-style:none;display:flex;gap:10px;flex-wrap:wrap}
+    .towns li{border:1px solid #dce6dc;padding:7px 12px;background:#fff;color:#45634c;font-size:13px}
+    .cta-strip{text-align:center;background:#edf4ed;padding:66px 0}
+    .cta-strip h2{margin-bottom:13px}
+    .cta-strip p{max-width:700px;margin:0 auto 25px;color:#506456}
+    .footer{background:#142e20;color:#dbe8dc;padding:54px 0 20px}
+    .footer-cols{display:grid;grid-template-columns:1.65fr 1fr 1fr;gap:40px}
+    .footer h3{font-size:18px;color:#fff}.footer p{color:#cbdacd}
+    .footer a{color:#dceade;text-decoration:none}.footer a:hover{text-decoration:underline}
+    .footer ul{list-style:none;margin:0;padding:0}.footer li{margin-bottom:8px}
+    .footer-bottom{border-top:1px solid #355440;margin-top:42px;padding-top:22px;color:#c5d3c8;font-size:12px}
+    .footer-bottom p{max-width:950px;margin-bottom:10px;color:inherit}
+    .responsive-note{color:#4d5b52;font-size:14px}
+    @media(max-width:970px){.siteheader-inner{flex-direction:column;justify-content:center;padding:18px 0;gap:18px}.nav{justify-content:center;gap:20px}.two-col{gap:30px}}
+    @media(max-width:740px){html{scroll-padding-top:105px}.container{width:min(100% - 30px,var(--max))}.callbar-inner{gap:9px;min-height:78px}.callbar-message{font-size:12px;max-width:175px}.callbar a{padding:10px 12px;font-size:16px}.siteheader-inner{align-items:flex-start}.brand-title{font-size:17px}.nav{gap:12px 19px;justify-content:flex-start}.nav a{font-size:13px}.hero-inner{min-height:465px;padding-block:65px}.hero h1{font-size:40px}.section{padding:58px 0}.services3,.two-col,.service-list,.footer-cols{grid-template-columns:1fr}.service-art{height:210px}.two-col{gap:25px}.two-col .image-panel{order:-1;min-height:225px}.footer-cols{gap:22px}.banner-section{padding:54px 0}}
+    @media(max-width:410px){.callbar-inner{flex-direction:column;padding:8px 10px}.callbar-message{max-width:none}.callbar a{width:100%;max-width:290px;padding:7px 9px}.hero h1{font-size:35px}.brand-mark{width:46px;height:46px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"DuPage Property Care Guide","url":"https://dupagecountypropertymaintenance.com/","description":"Independent information and service-inquiry resource for winter and seasonal property care in DuPage County, Illinois."}</script>
+</head>
+<body>
+  <div class="callbar" role="region" aria-label="Call about snow removal">
+    <div class="callbar-inner">
+      <span class="callbar-message">Looking for Snow Removal in DuPage County?</span>
+      <a href="tel:6305340189" aria-label="Call about snow removal at 630 534 0189">☎ <span>(630) 534-0189</span></a>
+    </div>
+  </div>
+
+  <header class="siteheader" id="top">
+    <div class="container siteheader-inner">
+      <a class="brand" href="https://dupagecountypropertymaintenance.com/" aria-label="DuPage Property Care Guide home">
+        <img class="brand-mark" src="assets/logo.svg" alt="">
+        <span><span class="brand-title" style="display:block">DuPage Property<br>Care Guide</span><span class="brand-subtitle" style="display:block">Independent local resource</span></span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#top">HOME</a><a href="#about">ABOUT</a><a href="#services">SERVICES</a><a href="#faqs">FAQ'S</a><a href="#contact">CONTACT</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Outdoor Maintenance · DuPage County, Illinois</p>
+          <h1 id="hero-title">Looking for Snow Removal in DuPage County?</h1>
+          <p class="lead">Planning ahead for winter or dealing with a recent snowfall? Learn what to ask about driveway clearing, walkways, and one-time or recurring snow service. Landscaping questions are welcome, too.</p>
+          <a class="btn btn-light" href="tel:6305340189">☎ Call About Snow Removal Options</a>
+          <p class="hero-foot">An independently operated property care information and inquiry website.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services" aria-labelledby="service-title">
+      <div class="container">
+        <div class="section-intro">
+          <p class="section-kicker">Outdoor maintenance</p>
+          <h2 id="service-title">Seasonal Property Care Topics</h2>
+          <p>From snowfall to lawn upkeep, knowing your options makes it easier to describe the help your property needs. These are informational categories, not a guarantee that a particular service is available.</p>
+        </div>
+        <div class="services3">
+          <article class="service-card"><div class="service-art"><img loading="lazy" src="assets/tree-care.svg" alt="Illustration of a tree in a landscaped yard"></div><div class="service-content"><h3>Tree Care</h3><p>Questions about trimming, overgrown branches, and seasonal property upkeep.</p></div></article>
+          <article class="service-card featured"><div class="service-art"><img loading="lazy" src="assets/snow-service.svg" alt="Illustration of a snow-covered driveway and cleared walkway"></div><div class="service-content"><h3>Snow Removal</h3><p>Discuss driveway size, walkways, snow depth, and whether you need a one-time visit or seasonal arrangement.</p></div></article>
+          <article class="service-card"><div class="service-art"><img loading="lazy" src="assets/mulch-care.svg" alt="Illustration of a garden bed with mulch and plants"></div><div class="service-content"><h3>Mulching & Landscaping</h3><p>Plan for mulch, basic landscape maintenance, and spring or fall property care questions.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="about" aria-labelledby="about-title">
+      <div class="container two-col">
+        <div class="image-panel"><img loading="lazy" src="assets/winter-landscape.svg" alt="Illustrated winter neighborhood with snow-covered homes"></div>
+        <div class="copy">
+          <p class="section-kicker">Who We Are</p>
+          <h2 id="about-title">Local Information for Winter Property Needs</h2>
+          <p>DuPage Property Care Guide is an independently operated website focused on the questions residents ask about snow removal and seasonal outdoor maintenance in DuPage County, Illinois.</p>
+          <p>We do not perform snow removal or landscaping ourselves. When you call, share the type of assistance you're looking for and the location of your property.</p>
+          <ul class="check-list"><li>DuPage County neighborhood-specific inquiries</li><li>One-time versus seasonal snow-removal questions</li><li>Residential driveway and walkway considerations</li><li>Landscaping and outdoor maintenance topics</li></ul>
+          <p style="margin-top:25px"><a class="btn" href="tel:6305340189">Call About Winter Service Options</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner-section" aria-labelledby="maintenance-title">
+      <div class="container">
+        <p class="section-kicker" style="color:#b4d8a7">Property Maintenance</p>
+        <h2 id="maintenance-title">Prepare Your Property for the Season Ahead.</h2>
+        <p>A driveway that stays accessible, clear entryways, and a property maintenance plan that fits your needs all start with the right questions. Our winter guide can help you prepare before you call a service provider.</p>
+        <a class="btn btn-light" href="#winter-guide">Learn More About Snow Removal</a>
+      </div>
+    </section>
+
+    <section class="section" id="faqs" aria-labelledby="faq-title">
+      <div class="container">
+        <p class="section-kicker">Frequently Asked Questions</p>
+        <h2 id="faq-title">Questions to Ask About Snow Removal</h2>
+        <div class="accordion">
+          <details><summary>Can I ask about a single snow-clearing visit?</summary><p>Yes. When you call, describe whether you need a one-time clearing or want to explore a seasonal arrangement. Specific options depend on the service provider and cannot be guaranteed by this website.</p></details>
+          <details><summary>Does snow clearing include walkways and front steps?</summary><p>Not every contractor offers the same service. Be specific about your driveway, front walk, steps, parking area, and any spots where ice tends to collect.</p></details>
+          <details><summary>How is snow removal pricing determined?</summary><p>Pricing can depend on driveway size, snow accumulation, access, frequency, the type of service requested, and the contractor's terms. Ask about the scope, price, and any snow-depth thresholds before agreeing to service.</p></details>
+          <details><summary>What details should I have ready before I call?</summary><p>Have your town or ZIP code, approximate driveway size, walkway or entryway needs, and preferred timeframe ready. These details make it easier to describe your request clearly.</p></details>
+          <details><summary>Does this website provide snow removal directly?</summary><p>No. This is an independent service-inquiry resource, not a snow removal contractor. Calling does not itself confirm a booking, service availability, or a final price.</p></details>
+          <details><summary>Can I ask about landscaping or other seasonal maintenance?</summary><p>Yes, you may inquire about landscaping and general outdoor property maintenance. A specific contractor's offered services and service area must be confirmed separately.</p></details>
+        </div>
+        <p class="faq-caption">The information above is general guidance. Always confirm any service scope, timing, coverage, and price with the business that would actually perform the work.</p>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="winter-guide" aria-labelledby="winter-title">
+      <div class="container">
+        <p class="section-kicker">Snow Removal Guide</p>
+        <h2 id="winter-title">Snow Removal in DuPage County: What to Ask Before Winter</h2>
+        <div class="section-intro"><p>Use this quick checklist when speaking with someone about clearing snow from your property. It works for planned winter arrangements as well as service inquiries after snowfall.</p></div>
+        <div class="service-list">
+          <article class="service-line"><h3>Driveways & Access</h3><p>Know the approximate size and layout of your driveway, whether it's shared, and where cleared snow can be placed.</p></article>
+          <article class="service-line"><h3>Walkways & Entrances</h3><p>Identify sidewalks, front steps, ramps, and entry paths that may need separate clearing or ice treatment.</p></article>
+          <article class="service-line"><h3>One-Time or Seasonal</h3><p>Ask whether a contractor offers one-time clearing, a recurring plan, or snow-depth-triggered visits.</p></article>
+          <article class="service-line"><h3>Timing & Pricing</h3><p>Ask about arrival windows, weather-related delays, accumulation thresholds, and whether salting costs extra.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="coverage" aria-labelledby="coverage-title">
+      <div class="container">
+        <p class="section-kicker">DuPage County, Illinois</p>
+        <h2 id="coverage-title">Common Local Inquiry Areas</h2>
+        <p class="muted" style="max-width:750px">Residents throughout DuPage County may have similar winter property-care questions. The towns below are examples of local areas of interest, not a promise of contractor coverage.</p>
+        <ul class="towns"><li>Wheaton</li><li>Naperville</li><li>Glendale Heights</li><li>Carol Stream</li><li>Elmhurst</li><li>Lombard</li><li>Addison</li><li>Villa Park</li><li>Glen Ellyn</li><li>Downers Grove</li><li>Bloomingdale</li><li>West Chicago</li><li>Woodridge</li><li>Winfield</li><li>Lisle</li><li>Oak Brook</li></ul>
+      </div>
+    </section>
+
+    <section class="cta-strip" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title">Need to Ask About Snow Clearing?</h2>
+        <p>Call to describe your property's location and the type of winter maintenance you're looking for. Service arrangements and availability have to be confirmed independently.</p>
+        <a class="btn" href="tel:6305340189">☎ Call (630) 534-0189</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-cols">
+        <div><h3>DuPage Property Care Guide</h3><p>Independent information for residents exploring snow removal and other seasonal property maintenance options in DuPage County, Illinois.</p></div>
+        <div><h3>Explore</h3><ul><li><a href="#top">Home</a></li><li><a href="#services">Services</a></li><li><a href="#winter-guide">Winter Guide</a></li><li><a href="#faqs">FAQs</a></li></ul></div>
+        <div><h3>Information</h3><ul><li><a href="https://dupagecountypropertymaintenance.com/privacy.html">Privacy Policy</a></li><li><a href="https://dupagecountypropertymaintenance.com/terms.html">Terms &amp; Conditions</a></li><li><a href="tel:6305340189">Call (630) 534-0189</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p>This independently operated informational website is not the former DuPage County Property Maintenance service business and is not affiliated with its previous operator. We do not perform property maintenance work ourselves.</p>
+        <p>© 2026 DuPage Property Care Guide · <a href="https://dupagecountypropertymaintenance.com/">dupagecountypropertymaintenance.com</a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
